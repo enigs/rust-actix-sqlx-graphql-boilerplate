@@ -1,0 +1,13 @@
+[package]
+name = "model"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+async-graphql = { workspace = true, features = ["chrono", "dataloader", "log"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json  = { workspace = true, features = ["preserve_order", "raw_value"] }
+sqlx = { workspace = true, features = ["runtime-tokio", "postgres", "time", "chrono", "json"] }
+
+config = { workspace = true }
+library = { workspace = true }

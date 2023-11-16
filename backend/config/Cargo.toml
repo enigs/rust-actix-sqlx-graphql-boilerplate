@@ -1,0 +1,11 @@
+[package]
+name = "config"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+actix-cors = { workspace = true }
+actix-web = { workspace = true }
+handlebars = { workspace = true, features = ["dir_source"] }
+slugify = { workspace = true }
+tracing-subscriber = { workspace = true, features = ["env-filter"] }

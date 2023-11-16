@@ -1,0 +1,29 @@
+[package]
+name = "server"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+actix = { workspace = true }
+actix-files = { workspace = true }
+actix-web = { workspace = true }
+async-graphql = { workspace = true, features = ["chrono"] }
+async-graphql-actix-web = { workspace = true }
+autometrics = { workspace = true, features = ["prometheus-exporter"] }
+base64-url = { workspace = true }
+dotenvy = { workspace = true }
+once_cell = { workspace = true }
+openssl = { workspace = true, features = ["vendored"]  }
+rand = { workspace = true }
+sentry = { workspace = true }
+sqlx = { workspace = true, features = ["runtime-tokio", "postgres", "time", "chrono", "json"] }
+tracing = { workspace = true }
+tracing-actix-web = { workspace = true }
+tracing-appender = { workspace = true }
+tracing-bunyan-formatter = { workspace = true }
+tracing-log = { workspace = true }
+tracing-subscriber = { workspace = true, features = ["env-filter"] }
+
+config = { workspace = true }
+library = { workspace = true }
+resolver = { workspace = true }

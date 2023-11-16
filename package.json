@@ -1,0 +1,12 @@
+{
+  "name": "my-server",
+  "version": "1.0.0",
+  "scripts": {
+    "clippy": "cargo clippy -- -D warnings",
+    "dev": "cargo watch -x 'run'",
+    "sqlx": "cargo sqlx prepare --workspace && cargo watch -x 'run'",
+    "sse-benchmark": "node $my_project_folder_path/assets/templates/tests/sse/benchmark.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

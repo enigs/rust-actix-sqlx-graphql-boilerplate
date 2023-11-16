@@ -1,0 +1,15 @@
+[package]
+name = "resolver"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+async-graphql = { workspace = true, features = ["chrono", "dataloader", "log"] }
+async-graphql-actix-web = { workspace = true }
+autometrics = { workspace = true, features = ["prometheus-exporter"] }
+serde = { workspace = true }
+serde_json  = { workspace = true, features = ["preserve_order"] }
+
+config.workspace = true
+library.workspace = true
+model.workspace = true

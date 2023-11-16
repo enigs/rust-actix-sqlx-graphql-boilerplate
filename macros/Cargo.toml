@@ -1,0 +1,10 @@
+[package]
+name = "macros"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+as-form-derive = { path ="./as_form_derive", version = "0.1.0" }
+set-cipher-derive = { path ="./set_cipher_derive", version = "0.1.0" }
+set-is-empty-derive = { path ="./set_is_empty_derive", version = "0.1.0" }
+set-mutate-derive = { path ="./set_mutate_derive", version = "0.1.0" }
