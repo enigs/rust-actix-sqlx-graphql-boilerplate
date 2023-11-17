@@ -10,8 +10,9 @@ Rust graphql server. Tech stack are as follows:
 - [x] Autometrics enabled (telemetry)
     - [x] Prometheus
     - [x] Grafana (dashboard) w/ autometrics dashboard enabled (just ask me for the setup)
-- [ ] Include generation of this boilerplate code under my personal generator cli.
+- [x] Include generation of this boilerplate code under my personal generator cli.
   -  **Status:** Ongoing as of 11/16/2023
+  -  **Status:** Completed as of 11/17/2023 - [https://github.com/enigs/gen](https://github.com/enigs/gen)
 
 ## Database:
 ```shell
@@ -68,4 +69,7 @@ You can run the following commands (if you have a nodejs installation)
 
 ### 11/16/2023:
 1. Added main `Cargo.toml` file (I forgot to include this one before).
-2. Added scheduler library using actix's actor system. Initialization is under `backend/server/mod.rs` and the scheduler is under `backend/server/main.rs`.
+2. Added scheduler library using actix's actor system. Initialization is under `backend/server/src/main.rs` and the scheduler is under `library/src/scheduler/mod.rs`.
+
+### 11/17/2023:
+1. Completed cli tool helper to generate this base boilerplate code. You can check this repo [https://github.com/enigs/gen](https://github.com/enigs/gen) for more information.
